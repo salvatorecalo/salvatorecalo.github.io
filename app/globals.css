@@ -1,0 +1,14 @@
+:root {
+    --primary: rgb(59, 130, 246);
+    --dark-primary: rgb(37, 99, 235);
+    --white: #ffffff;
+    --black: #1d1d1d;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
