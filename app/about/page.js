@@ -2,6 +2,16 @@ import {MyImg} from "@/app/components/MyImg/MyImg";
 import './About.css'
 import {KnowMore} from "@/app/components";
 import Link from "next/link";
+
+const metadata = {
+  title: 'Salvatore Calò - Informazioni su di me',
+  description: 'Informazioni su Salvatore Calò, sviluppatore web e graphic/ui/ux/web designer',
+  openGraph: {
+    title: 'Salvatore Calò - Informazioni su di m',
+    description: 'Informazioni su Salvatore Calò, sviluppatore web e graphic/ui/ux/web designer...',
+  },
+}
+
 export default function about() {
   return (
     <section className="aboutSection">

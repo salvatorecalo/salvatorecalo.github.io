@@ -12,7 +12,6 @@
 }
 
 .aboutSection img {
-    border-radius: 100%;
     width: clamp(200px, 40%, 300px);
     height: auto;
 }

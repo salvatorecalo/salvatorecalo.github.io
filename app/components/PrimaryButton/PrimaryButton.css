@@ -1,0 +1,27 @@
+.primaryButton {
+    text-align: center;
+    padding: 1em 1.5em;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: clamp(1rem, 1.1rem, 1.1rem);
+    cursor: pointer;
+    transition: 0.4s ease;
+    background-color: var(--primary);
+    min-width: 200px;
+}
+.primaryButton a, .primaryButton a:visited  {
+    color: var(--white);
+}
+.primaryButton:hover {
+    background: var(--dark-primary);
+    border: 1px solid var(--white);
+}
+
+.primaryButton:hover a {
+    color: var(--white);
+}
+
+.primaryButton a {
+    text-decoration: none;
+}

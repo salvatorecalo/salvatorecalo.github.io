@@ -1,0 +1,77 @@
+.hubjumbo {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25em;
+    min-height: 100vh;
+}
+
+.hubjumbo hgroup h1 {
+    font-size: 3em;
+}
+
+.hubjumbo hgroup p {
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+.hubjumbo img {
+    width: clamp(250px, 40%, 400px);
+    height: auto;
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.scrollDown svg {
+    animation: bounce 1s infinite;
+    width: 1em;
+    height: autoclear
+next;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hubjumbo {
+        gap: 5em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .hubjumbo {
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hubjumbo hgroup h1 {
+        font-size: 2.5em;
+    }
+
+    .hubjumbo hgroup p {
+        font-size: 1.3em;
+    }
+
+}
