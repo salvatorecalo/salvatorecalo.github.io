@@ -5,3 +5,15 @@
     gap: 2em;
     margin: 2em 0;
 }
+
+.socials li a svg {
+    fill: var(--black);
+    height: 32px;
+    width: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+    .socials {
+        justify-content: center;
+    }
+}
