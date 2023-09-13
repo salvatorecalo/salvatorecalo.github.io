@@ -1,0 +1,13 @@
+.skillsCardGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin: 4em 0;
+}
+
+@media screen  and (max-width: 1000px){
+    .skillsCardGrid {
+        flex-direction: column;
+    }
+}

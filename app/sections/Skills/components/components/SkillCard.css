@@ -1,0 +1,35 @@
+.skillCard {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--white);
+    border-radius: 14px;
+    color: var(--black);
+    padding: 2em;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skillCard:hover {
+    border-top: 8px solid var(--light-primary);
+}
+
+.skillCard img {
+    width: 32px;
+    height: 32px;
+}
+.skillCard h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.skillCard p {
+    color: var(--less-opacity);
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}

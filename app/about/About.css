@@ -1,5 +1,5 @@
 .aboutSection {
-    background: linear-gradient(to right, var(--primary), var(--dark-primary));
+    background: var(--blue-gradient);
     min-height: 100vh;
     width: 100%;
     display: flex;

@@ -5,11 +5,16 @@
     align-items: center;
     justify-content: center;
     gap: 25em;
-    min-height: 100vh;
+    min-height: 70vh;
+    position: relative;
 }
 
 .hubjumbo hgroup h1 {
     font-size: 3em;
+}
+
+.hubjumbo hgroup h2 {
+    font-weight: 300;
 }
 
 .hubjumbo hgroup p {
@@ -37,8 +42,6 @@
 .scrollDown svg {
     animation: bounce 1s infinite;
     width: 1em;
-    height: autoclear
-next;
 }
 
 @keyframes bounce {
@@ -64,6 +67,7 @@ next;
         gap: 1em;
         flex-direction: column-reverse;
         text-align: center;
+        min-height: 80vh;
     }
 
     .hubjumbo hgroup h1 {

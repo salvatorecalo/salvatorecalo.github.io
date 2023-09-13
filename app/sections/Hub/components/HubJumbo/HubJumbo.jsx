@@ -1,13 +1,23 @@
+'use client'
 import {PrimaryButton} from "@/app/components/PrimaryButton/PrimaryButton";
 import './HubJumbo.css'
-import {MyImg} from "@/app/components";
-import {Socials} from "@/app/components/Socials/Socials";
+import {MyImg, Socials, Typer} from "@/app/components";
+import Typewriter from 'typewriter-effect';
+
 export function HubJumbo() {
     return  (
         <section className="hubjumbo">
                 <hgroup>
                     <h1>Salvatore Calò</h1>
-                    <p>Graphic Designer....|</p>
+                    <h2>
+                        <Typewriter
+                            options={{
+                                strings: ['Web Developer...', 'Web Designer...', "Graphic Designer...", "UI/UX designer..."],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                    </h2>
                     <Socials />
                     <PrimaryButton text="Contattami" link="tel:+393441557187" />
                 </hgroup>

@@ -1,8 +1,11 @@
 :root {
     --primary: rgb(59, 130, 246);
     --dark-primary: rgb(37, 99, 235);
+    --light-primary: rgb(56 189 248);
     --white: #ffffff;
     --black: #1d1d1d;
+    --blue-gradient: linear-gradient(to right, var(--primary), var(--dark-primary));
+    --less-opacity: rgb(148 163 184);
 }
 
 

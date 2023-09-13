@@ -1,4 +1,6 @@
-import {HubJumbo} from "@/app/components";
+import Hub from "@/app/sections/Hub/Hub";
+import {Skills} from "@/app/sections/Skills/Skills";
+import {Footer} from "@/app/sections/Footer/Footer";
 
 const metadata = {
   title: 'Salvatore Calo - Home Page',
@@ -8,7 +10,9 @@ const metadata = {
 export default function Home() {
   return (
     <>
-      <HubJumbo />
+      <Hub />
+      <Skills />
+      <Footer />
     </>
   )
 }
