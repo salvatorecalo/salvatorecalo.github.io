@@ -1,10 +1,11 @@
 import './SecondaryButton.css'
-export function SecondaryButton({text,link}) {
+export function SecondaryButton({text,link, secondtext}) {
     return (
-        <button className="secondaryButton">
-            <a href={link} target="_blank">
-            {text}
+        <a href={link} target="_blank" className="secondaryButton">
+            <div>
+                <span>{text}</span>
+                <span>{secondtext}</span>
+            </div>
         </a>
-        </button>
     )
 }

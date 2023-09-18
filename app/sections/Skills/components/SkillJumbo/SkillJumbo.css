@@ -1,0 +1,32 @@
+.skillJumbo p, .skillJumbo h2 {
+    text-align: center;
+}
+
+.skillJumbo h2 {
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    font-size: 1.7em;
+}
+.Typewriter {
+    display: inline-block;
+}
+.skillJumbo .slugline {
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.7;
+}
+
+.skillJumbo div a, .skillJumbo div a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.skillJumbo div a:hover {
+    border-bottom: 1px solid var(--white);
+}
+
+@media screen and (max-width: 1000px){
+    .skillJumbo .slugline {
+        font-size: 1.1em;
+    }
+}

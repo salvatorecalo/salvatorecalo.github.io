@@ -17,9 +17,12 @@
     font-weight: 300;
 }
 
+.hubjumbo hgroup p,.hubjumbo hgroup div {
+    font-size: 1.5em;
+}
+
 .hubjumbo hgroup p {
     margin: 1em 0;
-    font-size: 1.5em;
 }
 
 .hubjumbo img {
@@ -60,6 +63,7 @@
         gap: 5em;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .hubjumbo {
         align-items: center;
@@ -67,7 +71,7 @@
         gap: 1em;
         flex-direction: column-reverse;
         text-align: center;
-        min-height: 80vh;
+        min-height: 90vh;
     }
 
     .hubjumbo hgroup h1 {

@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 2rem;
+    color: var(--black);
+    position: fixed;
+    background: var(--white);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+header h3 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5px;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    font-weight: 600;
+}
+
+header .nav-btn {
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+header .nav-btn svg {
+    width: 32px;
+    height: 32px;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        justify-content: space-between;
+    }
+    header .nav-btn {
+        display: block;
+    }
+
+    header nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--primary);
+        z-index: 10;
+        transition: 1s;
+    }
+
+    header .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+
+    nav a:hover {
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+    }
+
+    nav .nav-close-btn svg {
+        filter: invert(100%);
+    }
+}

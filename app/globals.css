@@ -1,17 +1,61 @@
 :root {
     --primary: rgb(59, 130, 246);
     --dark-primary: rgb(37, 99, 235);
-    --light-primary: rgb(56 189 248);
+    --light-primary: rgb(0, 85, 215);
     --white: #ffffff;
     --black: #1d1d1d;
+    --yellow: #FBC638;
     --blue-gradient: linear-gradient(to right, var(--primary), var(--dark-primary));
     --less-opacity: rgb(148 163 184);
+
+    --shine-degree: 120deg;
+    --shine-color: rgba(255, 255, 255, 0.5);
+    --shine-effect: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+    --shine-transition: all 0.65s ease-in-out;
+
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.text-enphasis {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--shine-effect);
+}
+.btn-anim::before {
+    animation: shine 5s ease-in-out infinite;
+}
+@keyframes shine {
+    0% {
+        left: -100%;
+        transition-property: left;
+    }
+    11.5044247788%, 100% {
+        left: 100%;
+        transition-property: left;
+    }
 }

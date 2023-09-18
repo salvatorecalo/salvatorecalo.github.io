@@ -9,7 +9,6 @@ export function HubJumbo() {
         <section className="hubjumbo">
                 <hgroup>
                     <h1>Salvatore Calò</h1>
-                    <h2>
                         <Typewriter
                             options={{
                                 strings: ['Web Developer...', 'Web Designer...', "Graphic Designer...", "UI/UX designer..."],
@@ -17,7 +16,6 @@ export function HubJumbo() {
                                 loop: true,
                             }}
                         />
-                    </h2>
                     <Socials />
                     <PrimaryButton text="Contattami" link="tel:+393441557187" />
                 </hgroup>

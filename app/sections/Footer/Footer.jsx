@@ -7,7 +7,7 @@ export function Footer() {
         <footer>
             <div>
                 <h3>
-                    <Image src={logo} alt="il logo di saqlvatorecalo.it" />
+                    <Image src={logo} alt="il logo di salvatorecalo.it" />
                     <span>
                         salvatore<strong>calò</strong>
                     </span>

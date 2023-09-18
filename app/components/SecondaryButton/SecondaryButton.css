@@ -1,26 +1,86 @@
 .secondaryButton {
-    text-align: center;
-    padding: 1.5em;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-size: clamp(0.9rem, 0.9rem, 1rem);
-    cursor: pointer;
-    transition: 0.4s ease;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 260px;
+    height: 52px;
+    background: var(--white);
+    transform: translate3d(0px, 0%, 0px);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition-delay: 0.6s;
+    overflow: hidden;
 }
-.secondaryButton a, .secondaryButton a:visited  {
-    color: var(--black);
+.secondaryButton:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark-primary);
+    border-radius: 50% 50% 0 0;
+    transform: translateY(100%) scaleY(0.5);
+    transition: all 0.6s ease;
+}
+.secondaryButton:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    border-radius: 0;
+    transform: translateY(0) scaleY(1);
+    transition: all 0.6s ease;
+}
+.secondaryButton div {
+    position: relative;
+    top: 16px;
+    width: 100%;
+    height: 26px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.secondaryButton span {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+.secondaryButton span:first-child {
+    color: var(--white);
+    transform: translateY(24px);
+}
+.secondaryButton span:last-child {
+    color: #1e0f21;
+    transform: translateY(0);
 }
 .secondaryButton:hover {
-    background: var(--dark-primary);
-    border: 1px solid var(--white);
-    color: var(--white);
+    background: #3ad2d0;
+    transition: background 0.2s linear;
+    transition-delay: 0.6s;
+}
+.secondaryButton:hover:after {
+    border-radius: 0 0 50% 50%;
+    transform: translateY(-100%) scaleY(0.5);
+    transition-delay: 0;
+}
+.secondaryButton:hover:before {
+    border-radius: 0;
+    transform: translateY(0) scaleY(1);
+    transition-delay: 0;
+}
+.secondaryButton:hover span:first-child {
+    transform: translateY(0);
+}
+.secondaryButton:hover span:last-child {
+    transform: translateY(-24px);
 }
 
-.secondaryButton:hover a {
-    color: var(--white);
-}
-
-.secondaryButton a {
-    text-decoration: none;
-}

@@ -7,30 +7,3 @@
     align-items: center;
     flex-direction: column;
 }
-
-.skills p, .skills h2 {
-    text-align: center;
-}
-
-.skills h2 {
-    margin-bottom: 1em;
-    letter-spacing: 1px;
-    font-size: 1.7em;
-}
-
-.skills .slugline {
-    font-size: 1.3em;
-    line-height: 1.7;
-}
-
-.skills p a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 1000px){
-    .skills .slugline {
-        font-size: 1.1em;
-    }
-}

@@ -1,9 +1,10 @@
 .skillCard {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1em;
     background-color: var(--white);
     border-radius: 14px;
@@ -18,8 +19,8 @@
 }
 
 .skillCard img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
 }
 .skillCard h3 {
     font-size: 1.8em;
@@ -32,4 +33,24 @@
     font-size: 1.1em;
     line-height: 1.6;
     text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+    .skillCard {
+        height: 300px;
+        width: 250px;
+    }
+
+    .skillCard h3 {
+        font-size: 1.3em;
+    }
+
+    .skillCard p {
+        font-size: 1em;
+    }
+
+    .skillCard img {
+        width: 32px;
+        height: 32px;
+    }
 }

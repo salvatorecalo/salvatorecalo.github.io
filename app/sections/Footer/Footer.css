@@ -17,3 +17,13 @@ footer div h3 {
     grid-template-columns: repeat(2, auto);
     grid-gap: 5px;
 }
+
+@media screen and (max-width: 1000px) {
+    footer div:not(:last-child) {
+        flex-direction: column;
+    }
+
+    footer div:last-child, hr {
+        margin: 0 1em;
+    }
+}
