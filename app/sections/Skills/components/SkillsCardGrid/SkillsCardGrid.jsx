@@ -7,7 +7,7 @@ export function SkillsCardGrid(){
         <main className="skillsCardGrid">
             <SkillCard
                 title="Designer"
-                description="Realizzo contenuti professionali per aziende (sia da condividere sui social sia da applicare a servizi e/o prodotti fisici"
+                description="Realizzo contenuti professionali per aziende (sia da condividere sui social sia da applicare a servizi e/o prodotti fisici)"
                 svg={graphicSvg}
                 alt="immagine di sviuppo contenuti per aziende/privati"
             />
@@ -15,7 +15,7 @@ export function SkillsCardGrid(){
                 title="Developer"
                 description="Realizzo siti web usando, sia attraverso la scrittura di codice, sia tramite l'uso di appositi CMS ad esempio WordPress, Shopify"
                 svg={codeSvg}
-                alt="immagine di sviuppo siti per aziende/privati"
+                alt="immagine di sviluppo siti per aziende/privati"
             />
         </main>
     )
