@@ -3,6 +3,6 @@ import Image from "next/image";
 import './MyImg.css'
 export function MyImg() {
     return (
-        <Image className="my-img" src={myImg} alt="una mia foto" fetchPriority="high" />
+        <Image className="my-img" src={myImg} alt="una mia foto" fetchPriority="high" draggable="false" />
     )
 }
