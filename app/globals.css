@@ -6,7 +6,7 @@
     --black: #1d1d1d;
     --yellow: #FBC638;
     --blue-gradient: linear-gradient(to right, var(--primary), var(--dark-primary));
-    --less-opacity: rgb(148 163 184);
+    --less-opacity: rgb(80, 80, 82);
 
     --shine-degree: 120deg;
     --shine-color: rgba(255, 255, 255, 0.5);

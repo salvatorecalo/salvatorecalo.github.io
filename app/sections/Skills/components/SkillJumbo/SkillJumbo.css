@@ -5,14 +5,13 @@
 .skillJumbo h2 {
     margin-bottom: 1em;
     letter-spacing: 1px;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 .Typewriter {
     display: inline-block;
 }
 .skillJumbo .slugline {
     text-align: center;
-    font-size: 1.3em;
     line-height: 1.7;
 }
 
@@ -26,7 +25,12 @@
 }
 
 @media screen and (max-width: 1000px){
+
+    .skillJumbo h2 {
+        font-size: 1.4em;
+    }
+
     .skillJumbo .slugline {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }

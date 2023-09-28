@@ -1,27 +1,8 @@
-#feedback {
+#recensioni {
     padding: 77px;
     min-height: 80vh;
     color: var(--black);
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-#feedback p, #feedback h2 {
-    text-align: center;
-}
-
-#feedback h2 {
-    margin-bottom: 1em;
-    letter-spacing: 1px;
-    font-size: 1.7em;
-}
-
-#feedback .slugline {
-    font-size: 1.15em;
-    line-height: 1.7;
-}
-
-#feedback .slugline span {
-    color: var(--primary);
 }

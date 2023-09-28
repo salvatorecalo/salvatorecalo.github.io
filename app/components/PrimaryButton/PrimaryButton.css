@@ -2,6 +2,7 @@
     border: 1px solid var(--primary);
     color: var(--white);
     background: var(--primary);
+    font-size: 1em;
 }
 
 .primaryButton:hover {

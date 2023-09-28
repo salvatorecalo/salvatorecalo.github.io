@@ -1,0 +1,27 @@
+.feedbackJumbo .slugline, .feedbackJumbo h2 {
+    text-align: center;
+}
+
+.feedbackJumbo h2 {
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.feedbackJumbo .slugline {
+    line-height: 1.7;
+}
+
+.feedbackJumbo .slugline span {
+    color: var(--primary);
+}
+@media screen and (max-width: 1000px){
+
+    .feedbackJumbo h2 {
+        font-size: 1.4em;
+    }
+
+    .feedbackJumbo .slugline {
+        font-size: 1em;
+    }
+}

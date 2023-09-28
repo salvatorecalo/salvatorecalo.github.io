@@ -25,8 +25,7 @@ export default function about() {
         web e mobile, e sono fiero che tu ora stia leggendo queste poche
         righe su di me!
       </p>
-      <KnowMore />
-      <Link href="/" className="router-link">Torna alla Home Page</Link>
+      <Link href="/" className="router-link">Torna alla Home Page del sito</Link>
     </section>
   )
 }
