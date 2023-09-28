@@ -3,6 +3,6 @@ import Image from "next/image";
 import './MyImg.css'
 export function MyImg() {
     return (
-        <Image className="my-img" src={myImg} alt="una mia foto" fetchPriority="high" draggable="false" />
+        <Image className="my-img" src={myImg} alt="foto di salvatore calò, fondatore di Salvatorecalo.it" fetchPriority="high" draggable="false" />
     )
 }

@@ -13,7 +13,7 @@
 }
 
 .feedbackJumbo .slugline span {
-    color: var(--primary);
+    color: var(--blue-gradient);
 }
 @media screen and (max-width: 1000px){
 

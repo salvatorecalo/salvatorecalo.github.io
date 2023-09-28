@@ -1,4 +1,11 @@
 .nav {
+    position: fixed;
+    background: var(--white);
+    width: 100%;
+    z-index: 30;
+}
+
+.nav div {
     max-width: 1220px;
     margin: 0 auto;
     border-bottom: 1px solid #eef1f6;
@@ -46,7 +53,7 @@
 .nav__menu a {
     text-decoration: none;
     color: inherit;
-    font-size: 1.2rem;
+    font-size: 0.9em;
     padding: 1em;
     transition: 0.4s;
     border-radius: 6px;
