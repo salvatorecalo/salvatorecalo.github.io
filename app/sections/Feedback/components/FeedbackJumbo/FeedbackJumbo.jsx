@@ -12,7 +12,7 @@ export function FeedbackJumbo() {
                 <br/>
                 Ma bando alle ciance, come è solito dire
                 <br/>
-                <span className="text-enphasis">take a look</span>
+                <span className="text-enphasis">"take a look"</span>
             </p>
         </div>
     )
