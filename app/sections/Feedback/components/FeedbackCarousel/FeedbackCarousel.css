@@ -1,0 +1,10 @@
+.slider-container {
+    min-height: 50vh;
+}
+
+.slider-control-bottomcenter ul {
+    gap: 5px;
+}
+
+.slider-frame {
+}

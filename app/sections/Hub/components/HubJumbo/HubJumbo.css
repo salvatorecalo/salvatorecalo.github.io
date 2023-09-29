@@ -71,9 +71,12 @@
         gap: 1em;
         flex-direction: column-reverse;
         text-align: center;
-        min-height: 90vh;
+        min-height: 96vh;
     }
 
+    .hubjumbo .my-img {
+        width: 300px;
+    }
     .hubjumbo hgroup h1 {
         font-size: 2.5em;
     }
