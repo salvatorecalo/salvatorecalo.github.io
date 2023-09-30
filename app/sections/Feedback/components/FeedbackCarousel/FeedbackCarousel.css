@@ -1,12 +1,15 @@
-.slider-container {
-    min-height: 50vh;
-    width: 100%;
-    position: relative;
+.splide__pagination {
+    bottom: -2em;
 }
 
-.slider-control-bottomcenter ul {
-    gap: 5px;
+.splide__arrow {
+    background: var(--primary);
 }
 
-.slider-frame {
+.splide__arrow svg {
+    fill: var(--white);
+}
+
+.splide__pagination__page.is-active {
+    background: var(--blue-gradient);
 }
