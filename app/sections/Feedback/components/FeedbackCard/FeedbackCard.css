@@ -1,13 +1,13 @@
 .container {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height:  60%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
 }
 .container .testimonial-box {
     position: relative;
-    width: 500px;
+    width: 800px;
     height: 300px;
 }
 .container .testimonial-box::before {
@@ -85,4 +85,25 @@
 
 .container .testimonial-box .testimonial .testimonial-user .user-info .user-job {
     font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    .container .testimonial-box {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container .testimonial-box {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container .testimonial-box {
+        width: 300px;
+        height: 300px;
+    }
 }

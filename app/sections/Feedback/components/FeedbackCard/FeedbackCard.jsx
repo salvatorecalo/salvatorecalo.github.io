@@ -3,26 +3,28 @@ import './FeedbackCard.css'
 import {useState} from "react";
 export default function Card({ id, alt, author, imgSrc, company, description }) {
     const [showMore, setShowMore] = useState(false)
-
     return (
         <article className="container">
             <main className="testimonial-box">
                 <div className="testimonial">
                     <p className="testimonial-text">
                         {
-                                showMore ? description : description.substring(0, 250) + '... '
+                                showMore ? description :
+                                    description.length > 250 ?
+                                        description.substring(0, 250) + '... '
+                                        : description
                         }
                         <button onClick={() => setShowMore(!showMore)}>
                             {
                                 description.length > 250 ?
-                                    showMore ? ' Mostra di più' : ' Mostra di meno'
+                                    showMore ? '  Mostra di più' : '  Mostra di meno'
                                     : ''
                             }
                         </button>
                     </p>
                     <div className="testimonial-user">
                         <img
-                            src="https://randomuser.me/api/portraits/women/17.jpg"
+                            src={imgSrc}
                             alt={alt}
                             className="user-img"
                         />

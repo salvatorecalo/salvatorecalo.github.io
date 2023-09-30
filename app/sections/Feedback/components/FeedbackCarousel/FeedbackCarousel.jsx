@@ -5,19 +5,25 @@ import Carousel from "nuka-carousel";
 import './FeedbackCarousel.css'
 export function FeedbackCarousel(){
     const {feedbacks} = useFeedbackCarousel()
+
     return (
         <Carousel
             autoplay
             adaptiveHeight={true}
             autoplayInterval={3000}
-            slidesToShow={3}>
+            slidesToShow={1}
+            cellAlign="center"
+            dragging={true}
+            enableKeyboardControls={true}
+            wrapAround={true}
+        >
             {
                 feedbacks?.map(feedback => {
                     return <Card
                         key={feedback.id}
                         author={feedback.author}
                         description={feedback.description}
-                        imageSrc={feedback.imageSrc}
+                        imgSrc={feedback.imageSrc}
                         alt={feedback.alt}
                         company={feedback.company}
                     />

@@ -1,5 +1,7 @@
 .slider-container {
     min-height: 50vh;
+    width: 100%;
+    position: relative;
 }
 
 .slider-control-bottomcenter ul {
