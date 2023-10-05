@@ -1,6 +1,6 @@
 #recensioni {
     padding: 77px;
-    min-height: 80vh;
+    min-height: 85vh;
     color: var(--black);
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 #recensioni .whyNext {
-    margin: 1em 0;
+    margin: 1.5em 0;
     font-size: 1.2em;
     text-align: center;
 }

@@ -1,5 +1,9 @@
 .splide__pagination {
-    bottom: -2em;
+    bottom: -6.5em;
+}
+
+.splide__track {
+    overflow: visible;
 }
 
 .splide__arrow {
