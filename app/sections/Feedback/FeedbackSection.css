@@ -17,3 +17,8 @@
     color: var(--primary);
 }
 
+@media screen and (max-width: 680px) {
+    #recensioni {
+        min-height: 100vh;
+    }
+}

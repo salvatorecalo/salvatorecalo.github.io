@@ -1,0 +1,19 @@
+.splide__pagination {
+    bottom: -10em;
+}
+
+.splide__track {
+    overflow: visible;
+}
+
+.splide__arrow {
+    background: var(--primary);
+}
+
+.splide__arrow svg {
+    fill: var(--white);
+}
+
+.splide__pagination__page.is-active {
+    background: var(--blue-gradient);
+}

@@ -1,7 +1,7 @@
 'use client'
 import './FeedbackCard.css'
 import {useState} from "react";
-export default function Card({ id, alt, author, imgSrc, company, description }) {
+export default function FeedbackCard({ id, alt, author, imgSrc, company, description }) {
     const [showMore, setShowMore] = useState(false)
     return (
         <article className="container">

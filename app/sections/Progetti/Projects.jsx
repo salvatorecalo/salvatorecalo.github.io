@@ -1,14 +1,12 @@
 import './Projects.css'
+import {ProjectCarousel} from "@/app/sections/Progetti/components/ProjectCarousel/ProjectCarousel";
+import {ProjectJumbo} from "@/app/sections/Progetti/components/ProjectJumbo/ProjectJumbo";
 
 export function Projects() {
     return (
         <section  className="progetti" id="progetti">
-            <h2>I miei progetti</h2>
-            <p className="slugline">
-                Non sei ancora convinto?
-                <br/>
-                Dai uno sguardo ai miei progetti e vedrai come <span className="text-enphasis">cambierai idea!</span>
-            </p>
+            <ProjectJumbo />
+            <ProjectCarousel />
         </section>
     )
 }

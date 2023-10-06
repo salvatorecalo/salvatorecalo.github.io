@@ -1,12 +1,14 @@
 'use client'
-import {useFeedbackCarousel} from "@/app/sections/Feedback/components/FeedbackCarousel/hooks/useFeedbackCarousel";
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import './FeedbackCarousel.css'
+import Card from "@/app/sections/Feedback/components/FeedbackCard/FeedbackCard";
+import './ProjectCarousel.css'
 import {AutoScroll} from "@splidejs/splide-extension-auto-scroll";
-import FeedbackCard from "@/app/sections/Feedback/components/FeedbackCard/FeedbackCard";
-export function FeedbackCarousel(){
-    const {feedbacks} = useFeedbackCarousel()
+import {useProjectCarousel} from "@/app/sections/Progetti/components/ProjectCarousel/hooks/useProjectCarousel";
+import ProjectCard from "@/app/sections/Progetti/components/ProjectCard/ProjectCard";
+
+export function ProjectCarousel(){
+    const {projects} = useProjectCarousel()
 
     return (
         <Splide
@@ -36,13 +38,14 @@ export function FeedbackCarousel(){
             }}
         >
             {
-                feedbacks?.map(feed => {
+                projects?.map(feed => {
+                    console.log(feed.imgSrc)
                     return (
                         <SplideSlide key={feed.id}>
-                            <FeedbackCard
-                                author={feed.author}
+                            <ProjectCard
+                                name={feed.name}
                                 description={feed.description}
-                                company={feed.company}
+                                githubLink={feed.githubLink}
                                 alt={feed.alt}
                                 imgSrc={feed.imgSrc}
                             />

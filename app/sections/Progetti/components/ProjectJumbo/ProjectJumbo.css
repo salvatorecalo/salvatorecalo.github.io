@@ -1,0 +1,25 @@
+.projectsJumbo .slugline, .projectsJumbo h2 {
+    text-align: center;
+}
+
+.projectsJumbo h2 {
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.projectsJumbo .slugline {
+    line-height: 1.7;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width: 1000px){
+
+    .projectsJumbo h2 {
+        font-size: 1.4em;
+    }
+
+    .projectsJumbo .slugline {
+        font-size: 1em;
+    }
+}
